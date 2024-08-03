@@ -10,3 +10,33 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.principal div{
+  display: inline-block;
+  font-size: 40px;
+  height: 80px;
+  background: rgb(127, 120, 120);
+  color: white;
+  padding: 10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  
+}
+
+.principal{
+  
+    background: rgb(10, 10, 10);
+    text-align: center;
+    margin: 10px;
+}
+.reloj,
+.uno, 
+.dos, 
+.tres, 
+.cuatro,
+.cinco,
+.seis{
+   border: 1px solid white;
+   border-radius: 3px;
+   margin: 3px;
+}
