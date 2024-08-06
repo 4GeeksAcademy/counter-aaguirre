@@ -6,14 +6,16 @@ import ReactDOM from "react-dom/client";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+
+import SecondsCounter from "./component/secondsCounter.jsx";
 
 //render your react application
 
 let counter = 0;
+const containerContador = ReactDOM.createRoot(document.getElementById('app'))
 setInterval ( () => {
     counter ++
-    ReactDOM.createRoot(document.getElementById('app')).render(<Home counter={counter}/>);
+    containerContador.render(<SecondsCounter  uno={counter/1}  dos={counter/10} tres={counter/100} cuatro={counter/1000} cinco={counter/10000} seis={counter/10000}/>);
 }, 1000); 
 
 
